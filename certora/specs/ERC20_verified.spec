@@ -383,3 +383,15 @@ rule decreaseAllowance() {
         assert allowance(otherHolder, otherSpender) != otherAllowanceBefore => (otherHolder == holder && otherSpender == spender);
     }
 }
+
+/*
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Rule: decreaseAllowance behavior and side effects                                                                   │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+*/
+rule foo() {
+    // this is a new rule
+}
+
+invariant bar()
+    // this is a new invariant
