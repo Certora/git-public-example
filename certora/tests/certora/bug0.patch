@@ -7,7 +7,7 @@ index ea7508d4..b729d6c9 100644
          _beforeTokenTransfer(address(0), account, amount);
  
 -        _totalSupply += amount;
-+        _totalSupply -= amount;
++        _totalSupply--;
          unchecked {
              // Overflow not possible: balance + amount is at most totalSupply + amount, which is checked above.
              _balances[account] += amount;

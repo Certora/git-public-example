@@ -7,7 +7,7 @@ index ea7508d4..73ec18f5 100644
              _balances[account] = accountBalance - amount;
              // Overflow not possible: amount <= accountBalance <= totalSupply.
 -            _totalSupply -= amount;
-+            _totalSupply += amount;
++            _totalSupply ++;
          }
  
          emit Transfer(account, address(0), amount);
